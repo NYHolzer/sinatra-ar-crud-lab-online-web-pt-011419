@@ -23,7 +23,7 @@ class ApplicationController < Sinatra::Base
     @article.save
     @article
     redirect "/articles/#{@article.id}"
-  
+  end
   
   get '/articles/new' do
     erb :new
